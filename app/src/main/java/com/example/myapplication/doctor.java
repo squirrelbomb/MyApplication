@@ -1,16 +1,26 @@
 package com.example.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 
-/**
- * Created by rzhan on 10/23/17.
- */
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 
-public class doctor extends ActionBarActivity {
+
+public class doctor extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.doctor);
     }
+
+    public void onClick1(View v)
+    {
+        startActivity(new Intent("com.litreily.mypatients"));}
+
+    public void onClick2(View v)
+    {
+        startActivity(new Intent("com.litreily.reviewfeedback"));
+    }
+
 }
